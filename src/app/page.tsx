@@ -1,3 +1,4 @@
+import { NavbarDemo } from "@/components/Navbar";
 import { AboutSection } from "@/sections/About";
 import { ContactSection } from "@/sections/Contact";
 import { Footer } from "@/sections/Footer";
@@ -9,6 +10,7 @@ import { TestimonialsSection } from "@/sections/Testimonials";
 export default function Home() {
   return (
     <div>
+      {/* <NavbarDemo /> */}
       <Header />
       <HeroSection />
       <ProjectsSection />
