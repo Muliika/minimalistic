@@ -22,9 +22,20 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-sans)", "Inter",],
-        serif: ["var(--font-serif)", "Calistoga", ],
-      }
+        sans: ["var(--font-sans)", "Inter"],
+        serif: ["var(--font-serif)", "Calistoga"],
+      },
+      animation: {
+        "ping-large": "ping-large 1s ease-in infinite",
+      },
+      keyframes: {
+        "ping-large": {
+          "75%, 100%": {
+            transform: "scale(3)",
+            opacity: "0",
+          },
+        },
+      },
     },
   },
   plugins: [],
